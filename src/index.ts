@@ -6,6 +6,7 @@ app.get('/', (c) => {
   return c.text('Hello Hono!')
 })
 
-Bun.serve({
-  fetch: app.fetch
-})
+export default {
+  fetch: app.fetch,
+  port: 3000
+}
